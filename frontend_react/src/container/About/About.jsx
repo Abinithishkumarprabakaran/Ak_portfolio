@@ -45,6 +45,28 @@ function About() {
         I know That <span>Good Dev</span><br />means <span>Good Business</span>
       </h2>
 
+      <div className='about-section'>
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5, type: 'tween'}}
+          className='app__profile-item'
+        >
+          <h1 className="head-text" style={{marginTop: 20}}><u>About</u> <span><u>me</u></span></h1>
+          <p style={{marginTop: 10}}>
+            As an avid explorer of <label>full-stack technologies</label>, 
+            I thrive on delving into the intricate layers of both <label>front-end </label>and <label>back-end development</label>, 
+            continuously expanding my knowledge and expertise to create seamless and cutting-edge web applications.
+          </p>
+        </motion.div>
+      </div>
+    </>
+
+    /* <>
+      <h2 className='head-text'>
+        I know That <span>Good Dev</span><br />means <span>Good Business</span>
+      </h2>
+
       <div className='app__profiles'>
         {abouts.map((about, index) => (
           <motion.div
@@ -60,7 +82,7 @@ function About() {
           </motion.div>
         ))}
       </div>
-    </>
+    </> */
   )
 }
 
