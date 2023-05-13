@@ -10,57 +10,57 @@ import { images } from '../../constants';
 const skills = [
   {
     name: "HTML",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.html
   },
   {
     name: "CSS",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.css
   },
   {
     name: "Javascript",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.javascript
   },
   {
     name: "MongoDB",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.mongodb
   },
   {
     name: "Express",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.express
   },
   {
     name: "React",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.react
   },
   {
     name: "Node",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.node
   },
   {
     name: "Git",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.git
   },
   {
     name: "VS Code",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.vscode
   },
   {
     name: "Sass",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.sass
   },
   {
     name: "Python",
-    bgColor: "#edf2f8",
+    // bgColor: "#edf2f8",
     icon: images.python
   }
 ]
@@ -162,5 +162,5 @@ function Skills() {
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
   'skills',
-  'app__whitebg'
+  'app__primarybg'
   );
