@@ -12,6 +12,11 @@
       display: none;
     }
   }
+
+  @media screen and (max-width:450px) {
+    top: 2rem;
+    width: 100%;
+  }
 }
 
 .app__header {
