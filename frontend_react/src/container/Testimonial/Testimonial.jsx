@@ -5,6 +5,7 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import { images } from '../../constants';
+import Brands from '.././Brands/Brands';
 
 import './Testimonial.scss'
 
@@ -60,7 +61,9 @@ function Testimonial() {
           </div>
         </>
       )}
-      <div className="app__testimonial-brands app__flex">
+
+      {/* Brands */}
+      {/* <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (
           <motion.div 
             whileInView={{ opacity: [0, 1] }}
@@ -70,7 +73,10 @@ function Testimonial() {
             <img src={urlFor(brand.imgUrl)} alt={brand.name} />
           </motion.div>
         ))}
-      </div>
+      </div> */}
+
+      <Brands />
+
     </>
   )
 }
