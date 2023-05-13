@@ -5,6 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 
 import './Footer.scss';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 function Footer() {
 
@@ -57,6 +58,8 @@ function Footer() {
           </a>
         </div>
       </div>
+
+      <SocialMedia />
 
       {!isFormSubmitted ? 
         <div className='app__footer-form app__flex'>
