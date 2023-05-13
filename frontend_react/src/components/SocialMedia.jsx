@@ -1,18 +1,22 @@
 import React from 'react'
 import { BsTwitter, BsInstagram, BsGithub } from 'react-icons/bs';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 const SocialMedia = () => {
   return (
     <div className='app__social'>
       <div>
+        <FiMail />
+      </div>
+      <div>
         <FaLinkedinIn />
       </div>
       <div>
-        <BsGithub />
+        <BsInstagram />
       </div>
       <div>
-        <BsInstagram />
+        <BsGithub />
       </div>
       <div>
         <BsTwitter />

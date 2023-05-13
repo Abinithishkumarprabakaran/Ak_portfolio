@@ -18,6 +18,8 @@ import express from '../assets/express.svg';
 import react from '../assets/react.svg';
 import vscode from '../assets/vscode.png';
 
+import email from '../assets/email.png';
+import mobile from '../assets/mobile.png';
 export default {
   css,
   git,
@@ -38,4 +40,7 @@ export default {
   mongodb,
   express,
   vscode,
+
+  email,
+  mobile
 };
