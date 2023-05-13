@@ -5,30 +5,89 @@ import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Skills.scss';
+import { images } from '../../constants';
+
+const skills = [
+  {
+    name: "HTML",
+    bgColor: "#edf2f8",
+    icon: images.html
+  },
+  {
+    name: "CSS",
+    bgColor: "#edf2f8",
+    icon: images.css
+  },
+  {
+    name: "Javascript",
+    bgColor: "#edf2f8",
+    icon: images.javascript
+  },
+  {
+    name: "MongoDB",
+    bgColor: "#edf2f8",
+    icon: images.mongodb
+  },
+  {
+    name: "Express",
+    bgColor: "#edf2f8",
+    icon: images.express
+  },
+  {
+    name: "React",
+    bgColor: "#edf2f8",
+    icon: images.react
+  },
+  {
+    name: "Node",
+    bgColor: "#edf2f8",
+    icon: images.node
+  },
+  {
+    name: "Git",
+    bgColor: "#edf2f8",
+    icon: images.git
+  },
+  {
+    name: "VS Code",
+    bgColor: "#edf2f8",
+    icon: images.vscode
+  },
+  {
+    name: "Sass",
+    bgColor: "#edf2f8",
+    icon: images.sass
+  },
+  {
+    name: "Python",
+    bgColor: "#edf2f8",
+    icon: images.python
+  }
+]
 
 function Skills() {
 
-  const [experience, setExperience] = useState([]);
-  const [skills, setSkills] = useState([])
+  // const [experience, setExperience] = useState([]);
+  // const [skills, setSkills] = useState([])
 
-  useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
+  // useEffect(() => {
+  //   const query = '*[_type == "experiences"]';
+  //   const skillsQuery = '*[_type == "skills"]';
 
-    client.fetch(query)
-      .then((data) => {
-        setExperience(data);
-      });
+  //   client.fetch(query)
+  //     .then((data) => {
+  //       setExperience(data);
+  //     });
 
-    client.fetch(skillsQuery)
-      .then((data) => {
-        setSkills(data);
-      });
-  }, []);
+  //   client.fetch(skillsQuery)
+  //     .then((data) => {
+  //       setSkills(data);
+  //     });
+  // }, []);
 
   return (
     <>
-      <h2 className='head-text'> Skills & Experience</h2>
+      <h2 className='head-text'> Skills</h2>
 
       <div className='app__skills-container'>
 
@@ -43,7 +102,10 @@ function Skills() {
               key={skill.name + index}
             >
               <div className='app__flex' style={{ backgroundColor: skill.bgColor }}>
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+                {/* <img src={urlFor(skill.icon)} alt={skill.name} /> */}
+
+                <img src={skill.icon} alt={skill.name} />
+
               </div>
               <p className='p-text'>{skill.name}</p>
             </motion.div>
@@ -52,7 +114,7 @@ function Skills() {
 
         {/* Experiences */}
 
-        <motion.div className='app__skills-exp'>
+        {/* <motion.div className='app__skills-exp'>
             {experience?.map((experience) => (
               <motion.div
                 className='app__skills-exp-item'
@@ -91,15 +153,11 @@ function Skills() {
                 </motion.div>
               </motion.div>
             ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   )
 }
-
-// export default Skills
-
-// export default AppWrap(Skills, 'skills')
 
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
