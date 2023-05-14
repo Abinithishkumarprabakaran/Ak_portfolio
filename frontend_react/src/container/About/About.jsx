@@ -30,19 +30,19 @@ import { urlFor, client } from '../../client';
 
 function About() {
 
-  const [abouts, setAbouts] = useState([]);
+  // const [abouts, setAbouts] = useState([]);
 
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
+  // useEffect(() => {
+  //   const query = '*[_type == "abouts"]';
 
-    client.fetch(query)
-      .then((data) => setAbouts(data))
-  }, [])
+  //   client.fetch(query)
+  //     .then((data) => setAbouts(data))
+  // }, [])
 
   return (
     <>
       <h2 className='head-text'>
-      Business-Driven <span>Full Stack Developer</span>,<br /> Building Solutions for <span>Success.</span>
+        Business-Driven <span>Full Stack Developer</span>,<br /> Building Solutions for <span>Success.</span>
         {/* I know That <span>Good Dev</span><br />means <span>Good Business</span> */}
       </h2>
 
