@@ -42,7 +42,8 @@ function About() {
   return (
     <>
       <h2 className='head-text'>
-        I know That <span>Good Dev</span><br />means <span>Good Business</span>
+      Business-Driven <span>Full Stack Developer</span>,<br /> Building Solutions for <span>Success.</span>
+        {/* I know That <span>Good Dev</span><br />means <span>Good Business</span> */}
       </h2>
 
       <div className='about-section'>

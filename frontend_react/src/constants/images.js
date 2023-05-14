@@ -20,6 +20,7 @@ import vscode from '../assets/vscode.png';
 
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
+import logo from '../assets/logo.png';
 export default {
   css,
   git,
@@ -42,5 +43,6 @@ export default {
   vscode,
 
   email,
-  mobile
+  mobile,
+  logo
 };
